@@ -3,22 +3,44 @@ body {
    
 }
 
+header {
+    border: 2px solid red;
+    align-self: center;
+    display: flex;
+}
+
 #container {
     display: flex;
     
 }
 
-header {
-    border: 2px solid red;
+aside#lateral-esquerda {
+    border: 2px solid blue;
+    flex-grow: 1;
     
 }
 
-aside {
-    border: 2px solid blue;
+aside#lateral-video {
+    border: 2px solid orange;
+    width: 300px;
 }
 
-div {
-    border: 2px solid purple;
+div#conteudo-video{
+    flex-grow: 2;
+}
+
+div#caixa-video {
+    border: 1px solid green;
+    display: flex;
+    height: 500px;
+}
+
+
+div#conteudo-principal {
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+
 }
 
 p {

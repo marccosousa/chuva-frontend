@@ -8,23 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id = "container"> <!-- inicio container -->
-        
-        <header> <!--inicio header -->
+    
+    <header> <!--inicio header -->
+        <div id = "img-evento">
+            Slaca 2019
+        </div>
+
+        <div>
             <p>titulo2</p>
             <h5>Titulo</h5>
             <p>titulo3<p>
-            
-            <div>
-                idioma/login/imglogin
-            </div>
+        </div>
+        
+        <div>
+            idioma/login/imglogin
+        </div>
 
-        </header> <!--fim header -->
+    </header> <!--fim header -->
+
+    <div id = "container"> <!-- inicio container -->
 
         <aside id = "lateral-esquerda"> <!--inicio lateral esquerda -->
-            <div id = "img-evento">
-                Slaca 2019
-            </div>
+            
             <div id = "img-logo">
                 12 Slaca
             </div>
@@ -45,24 +50,28 @@
         <div id = "conteudo-principal"> <!--inicio conteudo principal -->
             
             <div id = "caixa-video"> <!--inicio caixa vídeo -->
-                <h3>
-                    titulo acima do video
-                </h3>
+                <h3>titulo acima do video                </h3>
+                    
+                    <div id = "conteudo-video">
+                        aqui vai o video
+                    </div>
 
-                <div id = "video">
-                    aqui vai o video
-                        <p>
-                            texto superior dentro do video
-                        </p>
-
-                        <div>
-                            img dentro do video
-                        </div>
-
-                        <p>
-                            texto ao lado da img do video
-                        </p>
-                </div>
+                        <aside id = "lateral-video"> <!-- inicio lateral video -->
+                            <div id = "links">
+                                <a href="">download</a>
+                                <a href="">favorito</a>
+                                <a href="">doi</a>
+                                <h4>Como citar esse trabalho</h4>
+                            </div>
+                
+                            <div id = "detalhes">
+                                <h3>Detalhes</h3>
+                                <p>
+                                    textos <!--talvez precise de outra div-->
+                                </p>
+                            </div>
+                
+                        </aside> <!-- fim lateral video -->
             </div> <!-- fim caixa vídeo -->
 
             <div id = "resumos"> <!--inicio resumos -->
@@ -94,37 +103,21 @@
                 </div>
             </div> <!-- fim caixa discussoes -->
 
-            <aside id = "lateral-direita"> <!-- inicio lateral direita -->
-                <div id = "links">
-                    <a href="">download</a>
-                    <a href="">favorito</a>
-                    <a href="">doi</a>
-                    <h4>Como citar esse trabalho</h4>
-                </div>
-
-                <div id = "detalhes">
-                    <h3>Detalhes</h3>
-                    <p>
-                        textos <!--talvez precise de outra div-->
-                    </p>
-                </div>
-
-            </aside> <!-- fim lateral direita -->
-
         </div> <!--Fim conteudo principal -->
 
-        <footer>
-            <div id = "img-footer">
-                imagem-footer
-            </div>
-            <div>
-                <p id = "sobre a chuva">
-                    sobre a chuva
-                </p>
-            </div>
-        </footer>
     
     </div> <!-- fim container princ -->
+
+    <footer>
+        <div id = "img-footer">
+            imagem-footer
+        </div>
+        <div>
+            <p id = "sobre a chuva">
+                sobre a chuva
+            </p>
+        </div>
+    </footer>
     
 </body>
 </html>
