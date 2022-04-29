@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+   
+}
+
+#container {
+    display: flex;
+    
+}
+
+header {
+    border: 2px solid red;
+    
+}
+
+aside {
+    border: 2px solid blue;
+}
+
+div {
+    border: 2px solid purple;
+}
+
+p {
+    border: 2px solid yellow;
+}
+
+
+footer {
+    border: 2px solid green;
+}
+
+h1, h2, h3, h4, h5 {
+    border: 2px solid orange;
+}
