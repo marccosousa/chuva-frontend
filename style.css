@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Quicksand";
     background: white;  
     margin: 0;
 }
@@ -240,14 +240,11 @@ article#detalhes p {
 }
 
 #inferior {
-    border: 1px solid red;
+    border: 1px solid green;
     padding: 0 50px;
     display: flex;
     flex-direction: column;
-}
-
-.discussoes {
-    border: 1px solid green;
+    height: 980px;
 }
 
 div#resumo {
@@ -272,14 +269,15 @@ div#resumo {
 }
 
 #discussoes {
-    border: 1px solid red;
+    border: 1px solid #ECECEC;
     box-sizing: border-box;
     margin-top: 25px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    height: 700px;
+    height: 730px;
     justify-content: space-between;
+    
 }
 
 #discussoes > h3 {
@@ -288,15 +286,86 @@ div#resumo {
     padding-left: 15px;
     background-color: #FDF1EB;
     margin: 0;
+
 }
 
-div#formulario {
-    border:1px solid yellow;
+section#formulario {
     display: flex;
-    flex-grow: 1;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    background: url(/img/divisória.png) no-repeat bottom;
+    margin-bottom: 30px;
+    margin-top: 20px;   
+}
+
+#formulario h3{
+    text-align: center;
+
+    margin-top: -20px;    
+}
+
+#formulario p {
+    text-align: center;
+    width: 620px;
+
     
 }
 
+#imgs-formulario {
+    margin: 0 auto;
+
+}
+
+#imgs-formulario img {
+    padding-left: 20px;
+}
+
+input {
+    width: 133px;
+    height: 30px;
+    font-size: 1.1em;
+    font-family: 'Quicksand';
+    color: white;
+    background: linear-gradient(#FFB354, #EE7A3A);
+    margin-bottom: -33px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#perguntas {
+
+    padding: 0px 20px;  
+    height: 590px; 
+}
+
+.discussoes {
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;
+    box-shadow: 0 0 1em #ccc; 
+    margin-bottom: 30px;  
+    line-height: 25px; 
+    padding: 20px;
+}
+
+.discussoes span {
+    display: block;   
+}
+
+.assunto-discussoes {
+    font-size: 20px;
+    color: #ED7839; 
+    font-weight: bold;
+}
+
+.nome-discussoes {
+    font-size: 15px;
+    
+}
 
 
 /*************** FIM CONTEUDO PRINCIPAL ***************/
