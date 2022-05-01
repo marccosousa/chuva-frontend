@@ -143,10 +143,10 @@ Caixa vídeo - início
 */
 div#caixa-meio {
     display: flex;
-    height: 600px;
     box-sizing: border-box;
-    padding:0 50px 0 50px;
+    padding: 20px 50px;
     justify-content: space-between;
+    border: 1px solid blue;
 }
 
 div#conteudo-video{
@@ -163,7 +163,6 @@ article {
 
 
 aside#lateral-video {
-    padding-right:40px;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
@@ -241,10 +240,9 @@ article#detalhes p {
 
 #inferior {
     border: 1px solid green;
-    padding: 0 50px;
+    padding: 0 50px 50px 50px;
     display: flex;
     flex-direction: column;
-    height: 980px;
 }
 
 div#resumo {
@@ -275,7 +273,6 @@ div#resumo {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    height: 730px;
     justify-content: space-between;
     
 }
@@ -304,7 +301,6 @@ section#formulario {
 
 #formulario h3{
     text-align: center;
-
     margin-top: -20px;    
 }
 
@@ -340,7 +336,6 @@ input {
 #perguntas {
 
     padding: 0px 20px;  
-    height: 590px; 
 }
 
 .discussoes {
