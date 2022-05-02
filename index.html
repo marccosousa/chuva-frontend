@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
+    <!--Estilo index-->
     <link rel="stylesheet" href="style.css">
-</head>
+    <!-- NORMALIZE CSS -->
+    <link rel="stylesheet" href="/normalize.css">
 <body>
     
     <header> <!--inicio header -->
@@ -109,53 +111,127 @@
             </div> <!-- fim caixa-meio -->
 
             <div id = "inferior">
+                
                 <div id = "resumo"> <!--inicio resumo -->
                     <h3>Resumo</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a purus vel eros rutrum lacinia. Sed sapien nisi, interdum vitae aliquet sagittis, fermentum in tellus. Vestibulum ac malesuada urna, sed lobortis arcu. Pellentesque consequat nibh tortor, eget rhoncus justo hendrerit eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a purus vel eros rutrum lacinia. Sed sapien nisi, interdum vitae aliquet sagittis, fermentum in tellus. Vestibulum ac malesuada urna, sed lobortis arcu. Pellentesque consequat nibh tortor, eget rhoncus justo hendrerit eu. Quisque aliquet et augue ac eleifend. Ut ipsum enim, rhoncus ut diam a, vulputate ornare orci. Quisque aliquet et augue ac eleifend.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a purus vel eros rutrum lacinia. Sed sapien nisi, interdum vitae aliquet sagittis, fermentum in tellus. Vestibulum ac malesuada urna, sed lobortis arcu. Pellentesque consequat nibh tortor, eget rhoncus justo hendrerit eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a purus vel eros rutrum lacinia. Sed sapien nisi, interdum vitae aliquet sagittis, fermentum in tellus.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a purus vel eros rutrum lacinia. Sed sapien nisi, interdum vitae aliquet sagittis, fermentum in tellus. Vestibulum ac malesuada urna, sed lobortis arcu. Pellentesque consequat nibh tortor, eget rhoncus justo hendrerit eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a purus vel eros rutrum lacinia. Sed sapien nisi, interdum vitae aliquet sagittis, fermentum in tellus. Vestibulum ac malesuada urna, sed lobortis arcu. Pellentesque consequat nibh tortor, eget rhoncus justo hendrerit eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                     </p>
-                </div> <!--fim resumo -->
+                    
+                    <p style = "display: none;" id = "vejamais">
+                        Sed pulvinar orci nisl, consequat lacinia eros pulvinar sed. Donec mauris nulla, mattis sit amet volutpat mattis, maximus ut eros. Nullam tristique sem in nunc pharetra, ut malesuada purus vehicula. Donec iaculis mollis dictum. Sed sed arcu blandit, dapibus sem sit amet, luctus mi. Integer euismod semper ipsum ac sollicitudin. Suspendisse fermentum tincidunt massa, in eleifend ipsum gravida id. Sed cursus urna id hendrerit sodales. <br><br>
 
+                        Proin pulvinar egestas mattis. Curabitur ultricies blandit convallis. Ut ut nisl non dui eleifend dignissim quis ac nulla. Quisque venenatis mollis sapien, sit amet tincidunt arcu imperdiet a. Nullam eleifend leo ac odio bibendum tincidunt. Nunc quis vestibulum nulla, in fringilla nulla. Sed et risus elit. Cras tortor justo, ultricies quis elit ac, mattis pharetra quam. <br><br>
+
+                        Aliquam ac lacinia eros. Donec mi odio, pharetra ut dictum et, tempus et velit. Quisque sit amet venenatis velit. Maecenas sit amet sagittis elit. Mauris ac ante sit amet magna varius fermentum. Donec a tellus eu neque viverra molestie bibendum et metus. Nam condimentum faucibus eros. Curabitur nec nibh rutrum, commodo ex eu, aliquam nunc. Vivamus at massa vel enim accumsan pharetra tristique at quam.<br><br>
+                    </p>
+
+                    <input type="button" value="leia mais..." id = "btnleia">
+                                        
+                </div> <!--fim resumo -->
                 
                 <div id = "discussoes"> <!-- inicio caixa discussoes -->  
-                    <h3>Discussoes</h3>
                     
-                    <section id = "formulario">
+                    <h3>Discussoes</h3>
+                    <section id = "topico">
                         <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
-                        <div id = "imgs-formulario">
+                        <div id = "imgs-topico">
                             <img src=".//img/icone1 (1).png" alt="">
                             <img src=".//img/icone2.png" alt="">
                             <img src=".//img/icone3.png" alt="">
                         </div>
                         <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
 
-                        <input type="button" value="Criar tópico">
+                        <input id = "criar-topico" type="button" value="Criar tópico">
+                    </section>
+                    
+                        <form id = "criando-topico">
+                            <fieldset>
+                                <legend>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</legend>
 
-                    </section>                      
+                                <div>
+                                    <label for = "assunto">Assunto</label>
+                                    <input type="text" name="" id="assunto"  style="width: 99%" placeholder="   Defina um tópico sucinto para notificar os autores...">
+                                </div>
+                                <label for = "conteudo-formulario">Conteúdo</label>
+                                <div id = "resposta">
+                                    <textarea name="" id="" cols="105" rows="10" style="border: none;"></textarea>
+                                    
+                                    <span>
+                                        <img src="/img/Shape.png" alt="" class = "barra-resposta">
+                                        <img src="/img/Shape (1).png" alt="" class = "barra-resposta">
+                                        <button id = "enviar-topico" class = "barra-resposta">Enviar tópico</button>
+                                    </span>
+                                </div>
+                            </fieldset>
+                        </form>                       
+                    
+
+                    <section id = "novo-topico">
+                        <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
+
+                        <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+
+                        <input type="button" value="Criar novo tópico">
+                    </section>
+               
                     <section id = "perguntas">
-                        
                         <div class = "discussoes">
                             <span class = "assunto-discussoes">Estou terminando...</span>
                             <span class = "nome-discussoes">Marco Ribeiro</span>
                             <p>Depois de muita "bruteforce" estou finalmente chegando a final do desafio proposto. Estou me esforçando e evoluindo dentro do desafio! Muito feliz pela oportunidade. Está longe de estar perfeito, mas espero que consigam enxergar um pouco da minha evolução...
-                                Depois de muita "bruteforce" estou finalmente chegando a final do desafio proposto. Estou me esforçando e evoluindo dentro do desafio! Muito feliz pela oportunidade. Está longe de estar perfeito, mas espero que consigam enxergar um pouco da minha evolução...Depois de muita "bruteforce" estou finalmente chegando a final do desafio proposto. Estou me esforçando e evoluindo dentro do desafio! Muito feliz pela oportunidade. Está longe de estar perfeito, mas espero que consigam enxergar um pouco da minha evolução...Depois de muita "bruteforce" estou finalmente chegando a final do desafio proposto. Estou me esforçando e evoluindo dentro do desafio! Muito feliz pela oportunidade. Está longe de estar perfeito, mas espero que consigam enxergar um pouco da minha evolução...Depois de muita "bruteforce" estou finalmente chegando a final do desafio proposto. Estou me esforçando e evoluindo dentro do desafio! Muito feliz pela oportunidade. Está longe de estar perfeito, mas espero que consigam enxergar um pouco da minha evolução...Depois de muita "bruteforce" estou finalmente chegando a final do desafio proposto. Estou me esforçando e evoluindo dentro do desafio! Muito feliz pela oportunidade. Está longe de estar perfeito, mas espero que consigam enxergar um pouco da minha evolução...
                             </p>
                             <span>
                                 <img src="/img/card-footer.png" alt="">
                             </span>
                         </div>
 
-                        <div class = "discussoes">
-                            <span class = "assunto-discussoes">Assunto da pergunta</span>
-                            <span class="nome-discussoes">Nome do pessoa</span>
-                            <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                        <div class = "discussoes" id = "expandir"> 
+                            <span class = "assunto-discussoes">Palmeiras tem mundial?</span>
+                            <span class="nome-discussoes">Craque Neto</span>
+                            <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</p>
                             <span>
                                 <img src="/img/card-footer.png" alt="">
                             </span>
-                        </div>
-                    </section>
+                            
+                            <div id = "caixa-interacao">
+                                <div class="interacao">
+                                <span class="nome-discussoes">Robert Lewandowski</span>
+                                <p>
+                                    Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                </p>
+                                </div>
+                                
+                                <div class="interacao" style="background: white;">
+                                    <span class="nome-discussoes">Craque Neto</span>
+                                    <p>
+                                        
+                                        Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
+                                        <br><br>
+                                        Obrigada pela resposta, muito interessante o seu trabalho! 
+                                    </p>
+                                </div>
 
+                                <div class="interacao">
+                                    <span class="nome-discussoes">Luka Modric</span>
+                                    <p>
+                                        Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                        <br><br>
+                                        Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                    </p>
+                                </div>
+
+                                <div class="interacao">
+                                    <span class="nome-discussoes">Juninho Pernambucano</span>
+                                    <p>
+                                        Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                    </p>
+                                </div>
+                            </div>
+                        
+                    </section>
+                    
                 </div> <!-- fim caixa discussoes -->
             </div>
         </div> <!--Fim conteudo principal -->
@@ -176,3 +252,57 @@
     
 </body>
 </html>
+
+<script>
+
+var btn = document.getElementById("btnleia")
+var container = document.getElementById("vejamais");
+
+btn.addEventListener("click", function() {
+
+    if (container.style.display === "none") {
+        container.style.display = "block"
+    
+    } else {
+        container.style.display = "none"
+        
+    }
+})
+/////////////////////////////////////////////////////////////
+var btncriartopico = document.getElementById("criar-topico")
+var btn_enviar = document.getElementById("enviar-topico")
+var container_criando = document.getElementById("criando-topico")
+var container_topico = document.getElementById("topico")
+
+btncriartopico.addEventListener ("click", function () {
+
+    if (container_criando.style.display === "none") {
+        container_criando.style.display = "block"
+        container_topico.style.display = "none"
+    
+    } else {
+        container_criando.style.display = "none"
+        
+    }
+})
+
+btn_enviar.addEventListener ("click", function() {
+    window.alert("Tópico enviado! :D Agradecemos!")
+})
+//////////////////////////////////////////////////
+var expandir = document.querySelector("#expandir")
+var interacao = document.getElementById("caixa-interacao")
+
+expandir.addEventListener("click", function() {
+    
+    if (interacao.style.display === "none") {
+        interacao.style.display = "block"
+    } else {
+        interacao.style.display = "none"
+        
+    }
+})
+
+
+
+</script>
