@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: "Quicksand";
     background: white;  
+
 }
 
 ul {
@@ -17,6 +18,32 @@ a {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/*************** LATERAL ESQUERDA INICIO ***************/
+
+aside#lateral-esquerda {
+    background-color: white; 
+    box-shadow: 10px 5px 5px #ccc; 
+}
+
+nav ul a {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    display: block;
+    line-height: 35px;
+    font-size: 0.9em;
+    border-bottom: 2px solid #f3f3f3;
+    padding-left: 15px;
+}
+
+nav ul a:hover, a:visited {
+    padding-left: 30px;
+    background: #FDF1EB url(img/Rectangle\ 251.png) no-repeat left center;
+}
+
+
+
+/*************** LATERAL ESQUERDA FIM ***************/
 
 /*************** HEADER - inicio ***************/
 header {
@@ -78,7 +105,6 @@ div#login {
     padding-right: 10px;
 }
 
-
 div#imagem {
     align-items: center;
     margin: auto;
@@ -88,9 +114,21 @@ img#img-login {
     border-radius: 100%;
 }
 
-
 /*************** HEADER - fim ***************/
 
+/*Caso queira procurar:
+        LATERAL ESQUERDA
+        CONTEUDO PRINCIPAL
+        CAIXA VIDEO
+        LATERAL DIREITA 
+        PARTE INFERIOR
+        RESUMO
+        CRIAR TOPICO
+        FORMULARIO INICIO
+        NOVO TOPICO
+        DISCUSSOES INICIO
+        FOOTER
+*/
 
 /*************** CONTAINER PRINCIPAL INICIO ***************/
 #container {
@@ -98,33 +136,6 @@ img#img-login {
     box-sizing: border-box;
 }
 /*************** CONTAINER PRINCIPAL FIM ***************/
-
-/*************** LATERAL ESQUERDA INICIO ***************/
-
-
-aside#lateral-esquerda {
-    background-color: white; 
-    box-shadow: 10px 5px 5px #ccc; 
-
-}
-
-nav ul a {
-    font-family: 'Quicksand', sans-serif;
-    color: black;
-    display: block;
-    line-height: 35px;
-    font-size: 0.9em;
-    border-bottom: 2px solid #f3f3f3;
-    padding-left: 15px;
-}
-
-nav ul a:hover, a:active {
-    padding-left: 30px;
-    background: #FDF1EB url(img/Rectangle\ 251.png) no-repeat left center;
-}
-
-
-/*************** LATERAL ESQUERDA FIM ***************/
 
 /*************** CONTEUDO PRINCIPAL ***************/
 
@@ -136,14 +147,13 @@ div#conteudo-principal {
 }
 
 /*
-Caixa vídeo - início
+Caixa meio - início
 */
 div#caixa-meio {
     display: flex;
     box-sizing: border-box;
     padding: 20px 50px;
     justify-content: space-between;
-    border: 1px solid blue;
 }
 
 div#conteudo-video{
@@ -165,8 +175,11 @@ aside#lateral-video {
     margin-left: 20px;
 }
 /*
-Caixa vídeo - fim
+Caixa meio - fim
 */
+
+/* LATERAL DIREITA INICIO
+**********************************/
 
 #links-direita {
     display: flex;
@@ -174,7 +187,6 @@ Caixa vídeo - fim
     flex-wrap: wrap;
     font-family: 'Quicksand';
     padding-top: 13px;
-
 }
 
 #links-direita a {
@@ -207,7 +219,6 @@ article#detalhes {
 
 article#detalhes ul {
     padding-left:20px;
-    
 }
 
 article#detalhes span {
@@ -235,12 +246,20 @@ article#detalhes p {
 
 }
 
-#inferior {
-    border: 1px solid green;
-    padding: 0 50px 50px 50px;
+/* LATERAL DIREITA FIM
+**********************************/
 
+/* PARTE INFERIOR INICIO
+**********************************/
+
+#inferior {
+    padding: 0 50px 50px 50px;
     flex-direction: column;
 }
+
+
+/* RESUMO INICIO
+*************************************/
 
 div#resumo {
     border: 1px solid #ECECEC;
@@ -263,6 +282,11 @@ div#resumo {
     line-height: 23px;
 }
 
+/* RESUMO FIM
+**********************************/
+
+/* CRIAR TOPICO INICIO
+**********************************/
 #btnleia {
     background: #fff;
     color: #ED7839;
@@ -300,7 +324,6 @@ section#topico {
     margin-bottom: 30px;
     margin-top: 20px;
     background: url(/img/divisória.png) no-repeat bottom;
-
 }
 
 #topico h3{
@@ -311,19 +334,17 @@ section#topico {
 #topico p {
     text-align: center;
     width: 620px;
-    
 }
 
 #imgs-topico {
     margin: 0 auto;
-
 }
 
 #imgs-topico img {
     padding-left: 20px;
 }
 
-input#criar-topico {
+.botao-topico {
     width: 133px;
     height: 30px;
     font-size: 1.1em;
@@ -336,6 +357,11 @@ input#criar-topico {
     cursor: pointer;
 }
 
+/* CRIAR TOPICO FIM
+**********************************/
+
+/* FORMULARIO INICIO
+**********************************/
 form {
     display: none;
 }
@@ -365,7 +391,6 @@ label {
     display:block;
     background: #EAF1F2;
     line-height: 30px;
-
 }
 
 #resposta button {
@@ -383,6 +408,11 @@ label {
     margin-left: 30px;
 }
 
+/* FORMULARIO FIM
+**********************************/
+
+/* NOVO TOPICO INICIO
+**********************************/
 #novo-topico {
     display: flex;
     flex-direction: column;
@@ -392,8 +422,7 @@ label {
     margin-bottom: 30px;
     margin-top: 20px;
     background: url(/img/divisória.png) no-repeat bottom;
-    display: none;
-       
+    display: none;  
 }
 
 #enviar-topico {
@@ -407,9 +436,13 @@ label {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
 }
 
+/* NOVO TOPICO INICIO
+**********************************/
+
+/* DISCUSSOES INICIO
+**********************************/
 .discussoes {
     border: 1px solid #E7E7E7;
     border-radius: 5px;
@@ -433,6 +466,10 @@ label {
     display: block;
 }
 
+div.interacao {
+    border-bottom: 1px solid #ECECEC; 
+}
+
 #expandir {
     cursor: pointer;
 }
@@ -442,17 +479,33 @@ label {
     border: 1px solid #ECECEC;
     border-radius: 5px;
     margin-top: 5px;  
-    display: none;
-        
+    display: none;     
 }
+/* DISCUSSOES FIM
+**********************************/
 
-div.interacao {
-    border-bottom: 1px solid #ECECEC; 
-}
+/* PARTE INFERIOR FIM
+**********************************/
+
+/* FOOTER
+**********************************/
+footer {
+    display: flex;
+    border-top: 1px solid #ECECEC;
+    margin: 0 50px;
+ }
+ 
+ footer div {
+     padding: 20px;
+ }
+
+
+/* FOOTER
+**********************************/
+
+
+
 
 
 /*************** FIM CONTEUDO PRINCIPAL ***************/
 
-footer {
-    border: 2px solid green;
-}
